@@ -4,7 +4,7 @@ description: How does it work?
 
 # ⚒ How it works
 
-When you call the constructor of the `RSSFeed` or when you try to manually refresh the already-existing instance using either one of the following functions:
+When you try to manually refresh an `RSSFeed` instance using either one of the following functions:
 
 * `Refresh()`: refreshes the RSS feed using the current feed type and the current feed URL
 * `Refresh(string, RSSFeedType)`: refreshes the RSS feed using the specified feed type and the specified feed URL
