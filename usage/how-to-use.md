@@ -6,13 +6,15 @@ description: How do you use it?
 
 Using this library is very simple! Just use the `Syndian.Instance` namespace in any piece of code you want to use the library, as in: `using Syndian.Instance;`
 
-Just create a new instance of the `RSSFeed` class that contains the necessary constructor to allow you to get information about the feed.
+First, create a new instance of the `RSSFeed` class that contains the necessary constructor.
 
 ```csharp
 public RSSFeed(string FeedUrl, RSSFeedType FeedType)
 ```
 
-where:
+Then, call either `Refresh()` or `RefreshAsync()` to get the latest information about your feed, depending on the scenario. If you're either doing web development, or you're developing in an asynchronous program, call the `RefreshAsync()` function where appropriate.
+
+The constructor provides the following required arguments:
 
 * `FeedUrl`: specifies the URL to the RSS feed, for example, [https://www.techrepublic.com/rssfeeds/articles/](https://www.techrepublic.com/rssfeeds/articles/)
 * `FeedType`: specifies the feed type to parse
